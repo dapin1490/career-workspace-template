@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("JD")
+views:
+  - type: table
+    name: 진행 중인 공고
+    filters:
+      and:
+        - file.name != "template"
+        - 단계.containsAny("우선 지원", "준비 필요")
+    order:
+      - file.name
+      - 마감일
+      - 근무 시작일
+      - 이 공고는 좀 더 중요함
+      - 회사 유형
+      - file.folder
+    sort:
+      - property: 마감일
+        direction: ASC
+    columnSize:
+      note.이 공고는 좀 더 중요함: 30

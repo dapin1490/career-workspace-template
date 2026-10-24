@@ -1,0 +1,21 @@
+{
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./attachments",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "livePreview": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 90
+  },
+  "readableLineLength": false,
+  "showLineNumber": true
+}

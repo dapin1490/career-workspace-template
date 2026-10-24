@@ -1,0 +1,17 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "이 공고는 좀 더 중요함": "checkbox",
+    "마감일": "date",
+    "공고 링크": "text",
+    "단계": "multitext",
+    "회사 유형": "multitext",
+    "역량검사": "date",
+    "코테": "date",
+    "기준 일자": "date",
+    "근무 시작일": "date",
+    "메모": "text"
+  }
+}
