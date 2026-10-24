@@ -16,6 +16,7 @@ AI 에이전트와 함께 취업 준비를 하는 작업 공간 템플릿입니�
 career-workspace-template/
 ├── README.md                ← 이 문서 (빠른 시작)
 ├── GUIDE.md                 ← 운영 가이드 (원칙, 시작 순서, 선택 기능, 경험담)
+├── LICENSE                  ← MIT
 ├── AGENTS.md                ← 에이전트 행동 규칙
 ├── full-resume.md           ← 이력 원본의 진입점 (프로필, 이력 색인 표)
 ├── interview-records.md     ← 면접 기록
