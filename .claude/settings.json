@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$CLAUDE_PROJECT_DIR/scripts/check-submission-proof.ps1\" -Mode claude",
+            "timeout": 30,
+            "statusMessage": "입사 지원 제출 증빙 검사 중"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$CLAUDE_PROJECT_DIR/scripts/check-submission-proof.ps1\" -Mode claude",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "ask": [
+      "Read(**/JD/Submitted/**/submitted/**)"
+    ],
+    "deny": [
+      "Edit(**/JD/Submitted/**/submitted/**)"
+    ]
+  }
+}
