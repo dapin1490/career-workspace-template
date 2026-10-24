@@ -1,0 +1,6 @@
+#!/bin/sh
+# 커밋할 때마다 입사 지원 제출 증빙을 검사한다 (AGENTS.md 행동 규칙 8번).
+# 경고만 출력하고 커밋을 막지 않는다. 설치: scripts/README.md 참고.
+root="$(git rev-parse --show-toplevel)"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$root/scripts/check-submission-proof.ps1" -Mode git
+exit 0
