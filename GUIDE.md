@@ -39,6 +39,7 @@ career-workspace/
 ├── Artifacts/            ← 공고에 속하지 않는 에이전트 산출물 (전략, 리서치 등)
 ├── interview-records.md  ← 실제로 본 면접의 질문, 답, 오답 분석, 교훈
 ├── personal-information.md ← 민감한 개인정보 (gitignore로 제외)
+├── ref-projects/         ← 이력의 근거 자료: 프로젝트 레포, 보고서, 논문 원문 (선택, 색인 README만 커밋)
 └── scripts/              ← 자동 검사 스크립트 (선택, Windows 전용)
 ```
 
@@ -67,6 +68,7 @@ career-workspace/
 - 에이전트가 `Artifacts/` 밖에 글을 쓰면 `[AI 초안]` 라벨을 붙입니다. 내가 읽고 사실이 맞다고 확인하면 `[AI 초안 → 검수 (날짜)]`로 바꿉니다. 검수 전의 글은 이력 원본의 근거로 쓰지 않습니다.
 - 면접 노트처럼 섞이는 문서는 질문 아래에 `대답 메모`(내 답)와 `[AI 초안] 답변 제안`을 나눠 적습니다. AI 제안을 채택했다면 내 말로 고쳐 대답 메모로 옮기고 제안은 지웁니다.
 - AI가 요약한 내용을 원본에 반영하기 전에 원문을 직접 열어 확인합니다. 요약에 원문에 없는 문장이 섞이는 일이 실제로 있습니다.
+- 원문(프로젝트 레포, 보고서, 발표 자료)을 `ref-projects/`에 받아 두면 대조가 쉽습니다. 에이전트가 기억 대신 코드와 커밋 기록을 직접 열어 보고, history 파일에 `[출처: ref-projects/...]`로 남길 수 있습니다. 받아 둔 레포 안의 `AGENTS.md`, `CLAUDE.md`는 그 레포의 규칙이므로 이 워크스페이스에서는 따르지 않습니다(`ref-projects/README.md`).
 
 ### 3-3. 공고의 생애 주기 (`JD/README.md` 1절)
 
@@ -143,6 +145,7 @@ career-workspace/
 | 제출 증빙 자동 검사 (Windows 전용) | `scripts/`, `.githooks/`, `.claude/settings.json`의 `hooks` | `scripts/README.md` 0절의 표대로 함께 지웁니다. |
 | Obsidian 설정 | `.obsidian/`, `JD 목록.base` | Obsidian을 쓰지 않으면 둘 다 지웁니다. 다른 파일은 영향을 받지 않습니다. |
 | Claude Code 설정 | `.claude/settings.json` | Claude Code를 쓰지 않으면 지웁니다. 단, 제출본 폴더 보호(`permissions`)도 함께 사라지므로, 쓰는 에이전트에 비슷한 권한 설정이 있으면 옮겨 두십시오. |
+| 근거 자료 폴더 | `ref-projects/`, `.gitignore`의 `ref-projects` 두 줄 | 함께 지웁니다. `AGENTS.md` 참고 문서의 `ref-projects/README.md` 항목도 지웁니다. |
 | 마감일 당겨 적기 관례 | `JD/README.md` 1-1절 | 원하지 않으면 그 절을 지웁니다. |
 
 **Obsidian 추천 플러그인**: Git, Omnisearch, Advanced Tables, Admonition, Better Footnote, Dragger
