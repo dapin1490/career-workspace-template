@@ -1,0 +1,12 @@
+# 개인정보 파일: 저장소를 실수로 공개해도 올라가지 않도록 기본으로 제외합니다.
+# 비공개 저장소에서 함께 관리하고 싶다면 이 줄을 지우십시오.
+personal-information.md
+
+# Obsidian 개인 작업 상태 (창 배치 등, 사람마다 다름)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# OS가 만드는 파일
+.DS_Store
+Thumbs.db
+desktop.ini
