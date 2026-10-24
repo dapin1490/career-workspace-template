@@ -27,7 +27,7 @@ career-workspace-template/
 ├── ref-projects/            ← (선택) 이력의 근거 자료와 레포 색인 (색인 README만 커밋)
 ├── scripts/, .githooks/     ← (선택, Windows 전용) 제출 증빙 자동 검사
 ├── .claude/settings.json    ← (선택) Claude Code 훅과 제출본 폴더 보호
-└── .obsidian/, JD 목록.base  ← (선택) Obsidian 설정과 공고 목록 표
+└── .obsidian/, *.base      ← (선택) Obsidian 설정과 목록 보기 (JD 목록, 이력 목록)
 ```
 
 ## 빠른 시작
