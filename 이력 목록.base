@@ -1,0 +1,38 @@
+filters:
+  and:
+    - file.inFolder("history")
+    - file.name != "README"
+    - file.name != "_template"
+views:
+  - type: table
+    name: 전체 이력
+    order:
+      - file.name
+      - 유형
+      - 소속
+      - 시작일
+      - 종료일
+      - 팀
+      - 역할
+      - 프로젝트 기술
+      - 내 기술
+      - 대조일
+      - 메타 검수
+    sort:
+      - property: 종료일
+        direction: DESC
+  - type: table
+    name: 검수 대기
+    filters:
+      and:
+        - note["메타 검수"] == "AI 초안"
+    order:
+      - file.name
+      - 유형
+      - 종료일
+      - 역할
+      - 프로젝트 기술
+      - 내 기술
+    sort:
+      - property: 종료일
+        direction: DESC
