@@ -2,6 +2,11 @@
 # 비공개 저장소에서 함께 관리하고 싶다면 이 줄을 지우십시오.
 personal-information.md
 
+# 이력 근거 자료 (ref-projects/README.md 참고): 색인 README만 추적합니다.
+# 받아 둔 레포를 그대로 커밋하면 중첩 저장소로 꼬이고, 대용량 자료가 이 저장소에 섞입니다.
+ref-projects/*
+!ref-projects/README.md
+
 # Obsidian 개인 작업 상태 (창 배치 등, 사람마다 다름)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
