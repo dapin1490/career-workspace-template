@@ -62,6 +62,7 @@ career-workspace/
 - `full-resume.md`에는 이름, 기간, 기관 같은 메타데이터와 `상세: history/...md` 경로만 둡니다.
 - 같은 내용을 두 곳에 쓰면 한쪽만 고쳐지고 다른 쪽은 틀린 채로 남습니다.
 - 사실은 **원본 → 파생 문서**(자소서, 이력서, 포트폴리오, 면접 노트) 방향으로만 흐릅니다. 자소서를 쓰다가 새 사실이 필요하면 먼저 `history/`에 적고 나서 자소서에 씁니다.
+- 항목 파일 맨 위의 프론트매터(`history/README.md` 4-1절)에는 유형, 기간, 팀, 역할, 기술 같은 메타데이터를 적습니다. 파일을 열지 않고 "최근 2년 안의 프로젝트", "Python을 직접 다룬 항목"처럼 거를 수 있습니다. 기술은 `프로젝트 기술`(프로젝트에 쓰인 것)과 `내 기술`(내가 직접 다뤄 면접에서 설명할 수 있는 것)로 나눕니다. `내 기술`은 에이전트가 아니라 내가 정합니다.
 
 ### 3-2. AI가 쓴 글에는 라벨을 붙이고, 원문과 대조한다 (`history/README.md` 6절)
 
@@ -143,9 +144,10 @@ career-workspace/
 | 기능 | 파일 | 쓰지 않는다면 |
 |---|---|---|
 | 제출 증빙 자동 검사 (Windows 전용) | `scripts/`, `.githooks/`, `.claude/settings.json`의 `hooks` | `scripts/README.md` 0절의 표대로 함께 지웁니다. |
-| Obsidian 설정 | `.obsidian/`, `JD 목록.base` | Obsidian을 쓰지 않으면 둘 다 지웁니다. 다른 파일은 영향을 받지 않습니다. |
+| Obsidian 설정 | `.obsidian/`, `JD 목록.base`, `이력 목록.base` | Obsidian을 쓰지 않으면 모두 지웁니다. 다른 파일은 영향을 받지 않습니다. 프론트매터는 Obsidian 없이도 에이전트가 읽으므로 남겨 둡니다. |
 | Claude Code 설정 | `.claude/settings.json` | Claude Code를 쓰지 않으면 지웁니다. 단, 제출본 폴더 보호(`permissions`)도 함께 사라지므로, 쓰는 에이전트에 비슷한 권한 설정이 있으면 옮겨 두십시오. |
 | 근거 자료 폴더 | `ref-projects/`, `.gitignore`의 `ref-projects` 두 줄 | 함께 지웁니다. `AGENTS.md` 참고 문서의 `ref-projects/README.md` 항목도 지웁니다. |
+| 근거 자료의 확인 커밋 칸 (git 사용자용) | `ref-projects/README.md` '(선택) 확인 커밋 칸' | 기본으로는 들어 있지 않습니다. 필요하면 그 절대로 색인 표에 칸을 추가합니다. |
 | 마감일 당겨 적기 관례 | `JD/README.md` 1-1절 | 원하지 않으면 그 절을 지웁니다. |
 
 **Obsidian 추천 플러그인**: Git, Omnisearch, Advanced Tables, Admonition, Better Footnote, Dragger
