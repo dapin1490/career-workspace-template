@@ -73,5 +73,5 @@
         - 메인 문서의 `단계`를 `지원 완료`로 바꾸지 않고, 폴더를 `JD/Submitted/`로 옮기지 않습니다.
     - 새 세션에서 공고 폴더를 다룰 때, 지원서 작성은 끝났는데 증빙이 없는 공고를 발견하면 가장 먼저 증빙을 요구합니다. 마감일이 오늘이거나 지났으면 그 사실도 함께 알립니다.
     - **검사 표식**: 자기소개서와 지원 양식을 사용자가 모두 검토하면, 사용자 확인을 받아 메인 문서 프론트매터에 `제출 대기: true`를 켭니다. 양식별 검토 상태는 메인 문서 본문 체크리스트로 관리합니다. 증빙을 확인하면 `제출 대기`를 지우고 `단계`를 `지원 완료`로 바꾼 뒤 `JD/Submitted/`로 옮깁니다. 지원 완료 화면이 없는 사이트처럼 예외가 있으면 `증빙 면제:`에 사유를 적습니다.
-    - **기계적 검사** (스크립트를 지웠다면 이 항목도 지우십시오): `scripts/check-submission-proof.ps1`이 위 조건을 검사합니다. Claude Code 훅, Git 훅, Windows 작업 스케줄러가 이 스크립트를 자동으로 실행합니다(`scripts/README.md`). **Claude Code가 아닌 에이전트는 작업을 시작할 때 `powershell -ExecutionPolicy Bypass -File scripts/check-submission-proof.ps1`을 실행하고, 경고가 나오면 이 규칙을 따릅니다.**
+    - **기계적 검사** (스크립트를 지웠다면 이 항목도 지우십시오): `scripts/check-submission-proof.ps1`이 위 조건을 검사합니다. Claude Code 훅, Git 훅, Windows 작업 스케줄러가 이 스크립트를 자동으로 실행합니다(`scripts/README.md`). **Claude Code 훅이 실행되지 않는 환경(다른 에이전트, 웹의 Claude Code 등)에서는 작업을 시작할 때 `powershell -ExecutionPolicy Bypass -File scripts/check-submission-proof.ps1`을 실행하고, 경고가 나오면 이 규칙을 따릅니다.**
     - 배경: 지원서를 PDF로 저장만 하고 최종 제출 버튼을 누르지 않아 마감을 넘긴 사고가 있었음. 에이전트도 제출 여부를 확인하지 않고 폴더를 `지원 완료`로 정리했음.
