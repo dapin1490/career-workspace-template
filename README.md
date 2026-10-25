@@ -18,6 +18,7 @@ career-workspace-template/
 ├── GUIDE.md                 ← 운영 가이드 (원칙, 시작 순서, 선택 기능, 경험담)
 ├── LICENSE                  ← MIT
 ├── AGENTS.md                ← 에이전트 행동 규칙
+├── CLAUDE.md                ← AGENTS.md를 불러오는 한 줄 (오래된 Claude Code 대비)
 ├── full-resume.md           ← 이력 원본의 진입점 (프로필, 이력 색인 표)
 ├── interview-records.md     ← 면접 기록
 ├── personal-information.example.md ← 개인정보 파일 형식 (실제 파일은 gitignore)
