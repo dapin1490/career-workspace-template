@@ -70,7 +70,7 @@
    [2/2] 작업 스케줄러 등록: 'career-workspace-submission-proof-check' (...)
    ```
 
-Claude Code를 쓰고 있다면 이 명령을 프롬프트에 `! powershell -ExecutionPolicy Bypass -File scripts/setup-this-pc.ps1`처럼 앞에 `!`를 붙여 입력해도 됩니다.
+Claude Code를 터미널에서 쓰고 있다면 이 명령을 프롬프트에 `! powershell -ExecutionPolicy Bypass -File scripts/setup-this-pc.ps1`처럼 앞에 `!`를 붙여 입력해도 됩니다.
 
 ### 3-2. 설치 확인
 
